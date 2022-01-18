@@ -2,8 +2,8 @@
     
 }
 .back{
-    background-image: url("https://wallpaperaccess.com/full/1321369.jpg");
-    height: 720px;
+    background-image: url("https://preview.colorlib.com/theme/flyplane/img/hero.jpg");
+    height: 820px;
     padding: 1em;
     margin-top: -1em;
     justify-content: space-between;
@@ -11,6 +11,33 @@
     text-align: center;
     color: #fff;
 }
+.location{
+    display: grid;
+   grid-template-columns: 2fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+#location_text{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content:left;
+}
+#top_socialhandle{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#top_socialhandle>a{
+    margin-left: 2em;
+    text-decoration: none;
+    color: #fff;
+
+}
+
 .navbar{
     background-color: aliceblue;
     display: grid;
@@ -24,6 +51,7 @@
 .navbar>img{
     padding: 20px;
 }
+
 #navlinks{
     display: flex;
     flex-direction: row;
@@ -35,58 +63,177 @@
 #navlinks>a{
     padding-top: 35px;
     color: #1d2a3b;
-    padding-left:1em;
-    padding-right: 1em;
+    padding-left:1.5em;
+    padding-right: 1.5em;
     text-decoration: none;
+    font-size: 16px;
 }
 #navlinks>a:hover{
     background: rgba(29,42,59,.1);
   
 }
 .header_content{
-    max-width: 750px;
+    max-width: 850px;
     font-family: "Nunito Sans", sans-serif;
     margin: auto;
+    margin-top: 10em;
 }
 .header_content>h2{
     color: #ffffff;
-    font-size: 55px;
+    font-size: 65px;
     font-weight:550;
-    line-height:65px;
+    line-height:75px;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:12px;
+    margin-bottom:10px;
+    letter-spacing: 2px;
 }
 .header_content>p{
     color: #ffffff;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 38px;
     max-width: 75%;
     margin-bottom: 42px;
     margin-left: auto;
     margin-right: auto;
-
 }
 .header_content>button{
     height: 2.5em;
     border: 0px;
-    padding: 13px 20px 28px;
+    padding: 20px 40px 33px;
     letter-spacing: 2px;
-    font-size:normal;
+    font-size:14px;
+    font-weight:550;
+    line-height: 20px;
     background-color: #ffffff;
+}
+.search{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr .7fr;
+    max-width: 90%;
+    column-gap: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -6em;
+    background-color: rgb(229,229,229);
+    margin-bottom: 3em;
+    box-shadow:  0px 10px 30px grey;
+}
+#finder{
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: .5em;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: x-large;
+    box-shadow: inset black;
+    
+}
+span>input{
+    border: 0px;
+    height: 2em;
+    font-size: medium;
+    color: black;
+
+}
+span>input:focus,#finder>select{
+    outline: none;
+}
+
+select>option{
+    line-height: 40px
+}
+#finder>select{
+    border: 0px;
+    height: 2em;
+    margin-top: .5em;
+}
+#submit_finder{
+    background-color: rgb(70,87,240);
+    font-size: large;
+    color: white;
+    border: 0ch;
+    
+}
+#filtericon{
+    color:rgb(70,87,240);
+}
+.specialOffer{
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 1em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: "Nunito Sans", sans-serif;
+}
+#offerHeading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+span>h1{
+    color: #1D2A3B;
+    font-size: 50px;
+    font-weight: 550; 
+}
+#offerHeading>h3{
+    max-width: 80%;
+    margin-left: auto;
+    font-size: larger;
+    color: #1D2A3B;
+    font-weight: 400;
+   
+    line-height: 25px;
+}
+.card_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-family: "Nunito Sans", sans-serif;
+}
+.card{
+    box-shadow: 5px 10px 30px black;
+}
+#card_title{
+    font-size: 24px;
+    line-height: 34px;
+    margin: 1em;
+}
+#card_title>a{
+    text-decoration: none;
+    color: rgb(25,27,38);;
+}
+#card_title~p{
+    margin: 1em;
+}
+#price{
+    margin: 1em;
+    display: inline-block;
+    background-color: aquamarine;
+    padding: .3em;
+    color: #1D2A3B;
 }
 footer{
     background-color:rgb(25,27,38);
 }
 .footer{
-    max-width: 70%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
     text-align: center;
     padding: 4em;
-    font-size: 15px;
+    font-size: 20px;
     font-family: "Nunito Sans",sans-serif;
 }
 #socialhandles{
