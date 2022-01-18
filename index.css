@@ -1,0 +1,129 @@
+@media screen and (max-width:2000px) {
+    
+}
+.back{
+    background-image: url("https://wallpaperaccess.com/full/1321369.jpg");
+    height: 720px;
+    padding: 1em;
+    margin-top: -1em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #fff;
+}
+.navbar{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+.navbar>img{
+    padding: 20px;
+}
+#navlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans',sans-serif;
+}
+#navlinks>a{
+    padding-top: 35px;
+    color: #1d2a3b;
+    padding-left:1em;
+    padding-right: 1em;
+    text-decoration: none;
+}
+#navlinks>a:hover{
+    background: rgba(29,42,59,.1);
+  
+}
+.header_content{
+    max-width: 750px;
+    font-family: "Nunito Sans", sans-serif;
+    margin: auto;
+}
+.header_content>h2{
+    color: #ffffff;
+    font-size: 55px;
+    font-weight:550;
+    line-height:65px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:12px;
+}
+.header_content>p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 75%;
+    margin-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header_content>button{
+    height: 2.5em;
+    border: 0px;
+    padding: 13px 20px 28px;
+    letter-spacing: 2px;
+    font-size:normal;
+    background-color: #ffffff;
+}
+footer{
+    background-color:rgb(25,27,38);
+}
+.footer{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    padding: 4em;
+    font-size: 15px;
+    font-family: "Nunito Sans",sans-serif;
+}
+#socialhandles{
+    margin-top: 2em;
+}
+#socialhandles>a{
+    
+    margin-left: .5em;
+    color: whitesmoke;
+    border-radius: 2em;
+   
+
+}
+#socialhandles>a:hover{
+    
+    margin-left: .5em;
+    color: blueviolet;
+    border-radius: 1em;
+
+}
+#linksfooter{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#linksfooter~p{
+    font-size: 13px;
+}
+p>a{
+    text-decoration: none;
+    color: Dodgerblue;
+}
+#linksfooter>a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 14px;
+   
+    font-weight:bold;
+}
