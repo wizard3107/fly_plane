@@ -11,8 +11,8 @@
 
 <body>
     <div class="back">
-        <section class="location">
-            <div id="location_text">
+        <section class="widget">
+            <div id="widget_text">
                 <span><i class="fas fa-map-marker-alt"></i> 84 Forest Ave, Lake Grove, New York</span>
                 <span><i class="fas fa-phone-alt"></i> (+12) 345-678-91012</span>
                 <span><i class="fas fa-envelope"></i> contact.colorlib@gmail.com</span>
@@ -22,7 +22,6 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-skype"></i></a>
-
             </div>
 
         </section>
@@ -30,11 +29,22 @@
             <img src="data:image/webp;base64,UklGRnAEAABXRUJQVlA4TGMEAAAvrwAKEAfjIJIkRcpjSeff0s0cPLYNB5EkKVIeG3n/3n6fsRy0keRIvsQf22G5mYv/244j2VaVOX/tii0JjMQIhHBeAvz73SVAyoUGNS40qOFQo4bDhQYONer7cf/+v/H+N3KhLkUKPZoU6tIo1KVIoS9NCnVpUuhRBHoUKdSlSaEvTQp9KY5R1Lk4xkGNAnVEMNGAMSmTXToi9NiGiWAxCUKlKGjE0uShitTjNG2m9BElRjQyafKZ/pnt+Yz+axvW7fe5Ltf3Psa2n3Zv24/nOCf8LwkGCVkiEiFU4oEYSSQbyJgKk9vQ9oJs23bTSJKHuZqZGdTMzAxFXZWkUvT/nzGWZKgsP0f0H6IkSXWbWWNhjNCG58WfAMHX/enu7hqu7e6e3kIA9XC0hpLWDh4gbHrdRbN2g5Y5RTsd5SFQyu+irbZeIUh63kB7rT0HKU+S/StE2S1001Z4bjhDVx0YfZpc3QC8ICK+2P1JUUtSGrepGW0i6uhT0V0PHcWgSjawb311dlgt0f0/O7QqWeDBNrc8rpTqYybuLNi/4XrxQBJp1bSFZjEDHFumaaU1x1wcWnAuG3GmTD1UyCUDrPFptyLlVgdJGhKM5DMBNEj/MDr+eaFfqf7xefrVcj9JPSsCd354QkR8pFZu9FwtmEgtKFaSut6xqkVio0xcFuNGq9WIisDUTrSPhLm/oB0x1aOIBicXV0melTEde3rbR8RLamWH7ACub8W42WJqlgSqzEy9aNgqeNcesp5YGVJcvbSlCZS051DlSYAOJr4BABninYJzcVFIrVZDoGXql1gyUtU+9oS+mOlRssbQAVnnIgWkowlwjojvHm5L/t/FHX0INOMokbuOmEuoaRYDWBQqNYUGeQLeEXEfAN7IAHvY99tscegbYt4pDe2FvLQB3Yc17S1irjcR0aawZwE7wxur/E4WkK9zlblLhWI6Z9n8FeZxW08Q8kHWqG0eN701dE7aK+wQHz7illKcNpgrgTIIDswrKYWciXFDJbnYG4+kbV37BATKokcD5CGe+fxbDAqXBoXvhzoGafjmBBGf3GGm4nK5nLhSLTOV4Jvqnl2hR+n8MGvDjitfsKeS5n2QsuUNqQPEY1Wy/JN0zfDwMK/fM4N9eus38uoN0gZ5njcS3WTLhZpwiEGlAvBXmdS3jDinDZjSNniMW26I0Z2CB9g3SRQ3HWAGmkkUxQ1yEHw2pIFVRMQ+Cy588kaMvoMXhEXccEA+V4mRH3LqWaYxjFJqSU7refAZF76zYMDLbRGLUCIHDFtxowTwT2YG6ZLvIchXn7BgyxNQrjV1BOgItONUlyQfxMV3sRIisouBTfAgixg8w8p9EphD5JcBuczzLzXn5IzKtH4JrApdM7csct2Bf/KfIMMSi+SxNFTyKiEyhEwXfaWMGFIH8lKrN5D9lzkWNNwRIuW+WnP8CoESOa66jsOZA4A/n9UXyF8fr/O2D6/zEDblfn76R38I0cpDCJXLQfgEAA=="
                 alt="">
             <div id="navlinks">
-                <a href="index.html">HOME</a>
-                <a href="pages.html">PAGES</a>
-                <a href="blog.html">BLOG</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="contact.html">CONTACTS</a>
+                <a href="index.html">home</a>
+                <a href="#">pages
+                    <!-- <ul>
+                    <li><a href="place.html">place</a></li>
+                    <li><a href="placeDetails.html">place details</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                </ul> -->
+            </a>
+                <a href="blog.html">blog</a>
+                <a href="about.html">about us</a>
+                <a href="contact.html">contacts</a>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </header>
         <div class="header_content">
@@ -49,14 +59,21 @@
     <form class="search">
         <div id="finder">
             <label for="where">Where</label>
-            <span><input type="text" name="" id="where" placeholder="Center Point, Lo..."> <i
-                    class="fas fa-map-marker-alt fa-xs" id="filtericon"></i></span>
+           <span> <span><input type="text" name="" id="where" placeholder="Center Point, Lo..."> <i
+                    class="fas fa-map-marker-alt fa-xs" id="filtericon"></i>
+                
+            </span>
+            <hr>
+        </span>
         </div>
         <div id="finder">
             <label for="dat">Date</label>
-            <span>
+           <span> <span>
                 <input type="text" placeholder="09th March, 2021"><i class="far fa-calendar fa-xs" id="filtericon"></i>
             </span>
+            <hr>
+        </span>
+
         </div>
         <div id="finder">
             <label for="guest">Guest</label>
@@ -66,31 +83,35 @@
                 <option value="06">06</option>
                 <option value="08">08</option>
             </select>
+            <hr>
         </div>
 
         </div>
-        <input type="submit" name="" id="submit_finder" value="Search Plane">
+        <input type="submit" name="" id="submit_finder" value="search plane">
     </form>
+    <!-- Special Offer -->
     <div class="specialOffer">
         <div id="offerHeading">
             <span>
                 <h1>Special Offers</h1>
-                <hr style="background-color:#4d3af7; width: 13%; float: left; height: 5px;margin-top: -.5em;">
+                <hr
+                    style="background-color:#4d3af7;opacity: 1; width: 13%; float: left; height: 5px;margin-top: -.5em;">
             </span>
             <h3>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
                 to using, making it look like readable English.</h3>
         </div>
         <div class="card_container">
+
             <div class="card">
                 <img src="https://preview.colorlib.com/theme/flyplane/img/places/xhp-1.jpg.pagespeed.ic.Xu1aY2aGYM.webp"
                     alt="">
-                
-                    <h4 id="card_title">
-                        <a href="#">Known monument in the black hills of south</a>
-                    </h4>
-                    <div id="card_detail">
+
+                <h4 id="card_title">
+                    <a href="#">Known monument in the black hills of south</a>
+                </h4>
+                <div id="card_detail">
                     <p>
-                        <i class="fas fa-map-marker-alt fa-sm" id="filtericon"></i> Lake Grove, New York
+                        <i class="fas fa-map-marker-alt fa-lg" id="filtericon"></i> Lake Grove, New York
                     </p>
                     <div id="price">
                         $120
@@ -100,12 +121,13 @@
             <div class="card"> <img
                     src="https://preview.colorlib.com/theme/flyplane/img/places/xhp-2.jpg.pagespeed.ic.4jANQcOpjG.webp"
                     alt="">
+
+                <h4 id="card_title">
+                    <a href="#">Known monument in the black hills of south</a>
+                </h4>
                 <div id="card_detail">
-                    <h4 id="card_title">
-                        <a href="#">Known monument in the black hills of south</a>
-                    </h4>
                     <p>
-                        <i class="fas fa-map-marker-alt fa-sm" id="filtericon"></i> Lake Grove, New York
+                        <i class="fas fa-map-marker-alt fa-lg" id="filtericon"></i> Lake Grove, New York
                     </p>
                     <div id="price">
                         $120
@@ -115,12 +137,13 @@
             <div class="card"> <img
                     src="https://preview.colorlib.com/theme/flyplane/img/places/xhp-3.jpg.pagespeed.ic.OVnB8LPyMm.webp"
                     alt="">
+
+                <h4 id="card_title">
+                    <a href="#">Known monument in the black hills of south</a>
+                </h4>
                 <div id="card_detail">
-                    <h4 id="card_title">
-                        <a href="#">Known monument in the black hills of south</a>
-                    </h4>
                     <p>
-                        <i class="fas fa-map-marker-alt fa-sm" id="filtericon"></i> Lake Grove, New York
+                        <i class="fas fa-map-marker-alt fa-lg" id="filtericon"></i> Lake Grove, New York
                     </p>
                     <div id="price">
                         $120
@@ -128,8 +151,270 @@
 
                 </div>
             </div>
-
         </div>
+    </div>
+        <!-- Our Benefits-->
+        <div class="benefits">
+            <div class="benifitContainer">
+            <div id="ourBenefits">
+                <div id="benefitHead">
+                    <p>Our Benefit</p>
+                    <hr style="background-color:#4d3af7;opacity: 1; width: 13%; height: 5px;margin-top: -2em;">
+                    <h3>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                    </h3>
+                </div>
+                <div id="benefitContent">
+                    <section id="benifitSection">
+                        <span id="benefitimg"><img
+                                src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbi-1.png.pagespeed.ic.DjbRsc5jwH.webp"
+                                alt="">
+                            <h3>Personal Schedule</h3>
+                        </span>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            making it look like readable English.</p>
+                    </section>
+                    <section id="benifitSection">
+                        <span id="benefitimg"><img
+                                src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbi-2.png.pagespeed.ic.FBCFpMxLd8.webp"
+                                alt="">
+                            <h3>Luxury Interiors</h3>
+                        </span>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            making it look like readable English.</p>
+                    </section>
+                    <section id="benifitSection">
+                        <span id="benefitimg"><img
+                                src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbi-3.png.pagespeed.ic.d6NhDqMPDB.webp"
+                                alt="">
+                            <h3>Safe & Confidential</h3>
+                        </span>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            making it look like readable English.</p>
+                    </section>
+                    <section id="benifitSection">
+                        <span id="benefitimg"><img
+                                src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbi-4.png.pagespeed.ic.wvEUL1huWb.webp"
+                                alt="">
+                            <h3>Professional Crew</h3>
+                        </span>
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            making it look like readable English.</p>
+                    </section>
+                </div>
+            </div>
+        
+            <div id="beniImages">
+                <div id="collageCol">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbp-1.jpg.pagespeed.ic.G1ZEkIDv9D.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbp-3.jpg.pagespeed.ic.sqJQ1s7EhG.webp"
+                        alt="">
+                </div>
+                <div id="collageCol">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbp-2.jpg.pagespeed.ic.zlUEOKU24G.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbp-4.jpg.pagespeed.ic.5wG8uiICAF.webp"
+                        alt="">
+                </div>
+            </div>
+        </div>
+     </div>
+       <!-- feature Places -->
+        <div class="featurePlace">
+            <h3>Feature Places</h3>
+            <hr style="background-color:#4d3af7;opacity: 1; width: 5em ;margin: auto; height: 5px;margin-top: -1em;">
+            <h4>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</h4>
+                <!-- radio buttons-->
+                <input type="radio" name="choice" id="rd-btn1" class="featureSS">
+                <input type="radio" name="choice" id="rd-btn2" class="featureSS">
+                <input type="radio" name="choice" id="rd-btn3" class="featureSS">
+                <input type="radio" name="choice" id="rd-btn4" class="featureSS">
+                <input type="radio" name="choice" id="rd-btn5" class="featureSS">
+            <div class="featurePlace_slideShow">
+             <div class="fpSlider">
+                <div  id="fpSlideShowCard" class="first">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/feature/xfeature-2.jpg.pagespeed.ic.oJRUr5TqYB.webp"
+                        alt="">
+                    <div id="fpCardDeatail">
+                        <span>
+                            <h1 style="margin: 0; padding: 0;">4.5</h1><i class="fas fa-star"></i>
+                            <p>(120k Rating)</p>
+                        </span>
+                        <span>
+                            <h5 style="margin: 0; padding: 0;"><a href="#"><i class="fas fa-map-marker-alt"></i>Bali,
+                                    Indonesia<i class="fas fa-long-arrow-alt-right fa-lg"></i></a></h5>
+                        </span>
+                    </div>
+                </div>
+                <div  id="fpSlideShowCard" >
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/feature/xfeature-3.jpg.pagespeed.ic.0nm_oNOsNK.webp"
+                        alt="">
+                    <div id="fpCardDeatail">
+                        <span>
+                            <h1 style="margin: 0; padding: 0;">4.5</h1><i class="fas fa-star"></i>
+                            <p>(120k Rating)</p>
+                        </span>
+                        <span>
+                            <h5 style="margin: 0; padding: 0;"><a href="#"><i class="fas fa-map-marker-alt"></i>Phuket,
+                                    Thailand<i class="fas fa-long-arrow-alt-right fa-lg"></i></a></h5>
+                        </span>
+                    </div>
+                </div>
+                <div  id="fpSlideShowCard" >
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/feature/xfeature-4.jpg.pagespeed.ic.yEsa0tiqMV.webp"
+                        alt="">
+                    <div id="fpCardDeatail">
+                        <span>
+                            <h1 style="margin: 0; padding: 0;">4.5</h1><i class="fas fa-star"></i>
+                            <p>(120k Rating)</p>
+                        </span>
+                        <span>
+                            <h5 style="margin: 0; padding: 0;"><a href="#"><i class="fas fa-map-marker-alt"></i>Positano, Italy<i class="fas fa-long-arrow-alt-right fa-lg"></i></a></h5>
+                        </span>
+                    </div>
+                </div>
+                <div  id="fpSlideShowCard" >
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/feature/xfeature-1.jpg.pagespeed.ic.AoE9hikUS_.webp"
+                        alt="">
+                    <div id="fpCardDeatail">
+                        <span>
+                            <h1 style="margin: 0; padding: 0;">4.5</h1><i class="fas fa-star"></i>
+                            <p>(120k Rating)</p>
+                        </span>
+                        <span>
+                            <h5 style="margin: 0; padding: 0;"><a href="#"><i class="fas fa-map-marker-alt"></i>Bali,
+                                    Indonesia<i class="fas fa-long-arrow-alt-right fa-lg"></i></a></h5>
+                        </span>
+                    </div>
+                </div>
+               <div  id="fpSlideShowCard" >
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/feature/xfeature-4.jpg.pagespeed.ic.yEsa0tiqMV.webp"
+                        alt="">
+                    <div id="fpCardDeatail">
+                        <span>
+                            <h1 style="margin: 0; padding: 0;">4.5</h1><i class="fas fa-star"></i>
+                            <p>(120k Rating)</p>
+                        </span>
+                        <span>
+                            <h5 style="margin: 0; padding: 0;"><a href="#"><i class="fas fa-map-marker-alt"></i>Phuket, Thailand<i class="fas fa-long-arrow-alt-right fa-lg"></i></a></h5>
+                        </span>
+                    </div>
+                </div>
+                </div> 
+               
+            </div>
+            <div id="manualBtn">
+                <label for="rd-btn1" class="manualBtn" id="Mbtn1"></label>
+                <label for="rd-btn2" class="manualBtn" id="Mbt2"></label>
+                <label for="rd-btn3" class="manualBtn" id="Mbtn3"></label>
+                <label for="rd-btn4" class="manualBtn" id="Mbtn4"></label>
+                <label for="rd-btn5" class="manualBtn" id="Mbtn5"></label>
+            </div>
+            </div>
+        <div class="destinationGallery">
+            <div id="destinationGallery">
+                <h1>Destination Gallery</h1>
+                <hr
+                    style="background-color:#4d3af7;opacity: 1; width: 5em; border: 0; margin: auto; height: 5px;margin-top: -1em;">
+                <h3>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</h3>
+            </div>
+
+            <div class="countryDisp">
+                <h1>Country</h1>
+            </div>
+        </div>
+        
+    </div>
+               <div id="countrydispSS">
+                <div id="country1">
+                    <h5>Canada</h5>
+                </div>
+                <div id="country2">
+                    <h5>Japan</h5>
+                </div>
+                <div id="country3">
+                    <h5>Italy</h5>
+                </div>
+                <div id="country4">
+                    <h5>Singapore</h5>
+                </div>
+                <div id="country5">
+                    <h5>China</h5>
+                </div>
+                <div id="country6">
+                    <h5>Australia</h5>
+                </div>
+                <div id="country7">
+                    <h5>Bangladesh</h5>
+                </div>
+                <div id="country8">
+                    <h5>India</h5>
+                </div>
+                <div id="country9">
+                    <h5>Spain</h5>
+                </div>
+                <div id="country10">
+                    <h5>America</h5>
+                </div>
+            </div> 
+        </div>
+         <div class="news">
+            <div>
+            <div id="newsFeed">
+                <h1>News Latest</h1>
+                <hr style="background-color:#4d3af7;opacity: 1; width: 13%; height: 5px;margin-top: 2em; margin-bottom: 2em;">
+
+                <div id="newsTiles">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/latest/xlr-1.jpg.pagespeed.ic.EQwjERLRmQ.webp"
+                        alt="">
+                    <div id="newsText">
+                        <h2>TRAVEL | ADMIN</h2>
+                        <p>The Point of using LOREM PSUM is that is has...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="newsTiles">
+                <img src="https://preview.colorlib.com/theme/flyplane/img/latest/xlr-2.jpg.pagespeed.ic.J82jxTLlo1.webp"
+                    alt="">
+                <div id="newsText">
+                    <h2>TRAVEL | ADMIN</h2>
+                    <p>The Point of using LOREM PSUM is that is has...</p>
+                </div>
+            </div>
+            <div id="newsTiles">
+                <img src="https://preview.colorlib.com/theme/flyplane/img/latest/xlr-3.jpg.pagespeed.ic.mCavlSq827.webp"
+                    alt="">
+                <div id="newsText">
+                    <h2>TRAVEL | ADMIN</h2>
+                    <p>The Point of using LOREM PSUM is that is has...</p>
+                </div>
+            </div>
+        </div>
+        <div class="bigTiles">
+            
+                <div id="bigTiles">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/blog/xlatest-1.jpg.pagespeed.ic.CBu1ZDXT4r.webp"
+                        alt="">
+                        <h2 id="newsDate">JAN 19, 2022</h2>
+
+                    <div id="newsText">
+                        <h2>TRAVEL | ADMIN</h2>
+                        <p>The Point of using LOREM PSUM is that is has...</p>
+                    </div>
+
+                </div>
+                <div id="bigTiles">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/blog/xlatest-2.jpg.pagespeed.ic.XLHIjUoEXr.webp"
+                        alt="">
+                        <h2 id="newsDate">JAN 19, 2022</h2>
+                    <div id="newsText">
+                        <h2>TRAVEL | ADMIN</h2>
+                        <p>The Point of using LOREM PSUM is that is has...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>  
         <footer>
             <div class="footer">
                 <img src="https://preview.colorlib.com/theme/flyplane/img/xfooter-logo.png.pagespeed.ic.NCNGXFtHK8.webp"
@@ -137,6 +422,7 @@
                 <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
                     scelerisque
                     volutpat diam. </p>
+
                 <div id="socialhandles">
                     <a href="index.html"><i class="fab fa-facebook fa-2x"></i></a>
                     <a href="index.html"><i class="fab fa-twitter-square fa-2x"></i></a>
@@ -149,15 +435,15 @@
                     <a href="index.html">HOME</a>
                     <a href="pages.html">PAGES</a>
                     <a href="blog.html">BLOG</a>
-                    <a href="about.html">ABOUT US</a>
+                    <a href="about.html">ABOUTUS</a>
                     <a href="contact.html">CONTACTS</a>
                 </div>
                 <p>Copyright ©2022 All rights reserved | This template is made with<span style="color: Dodgerblue;">
                         <i class="fas fa-heart"></i>
-                    </span> by <a href="colo.com">Colorlib</a> </p>
+                    </span> by <a href="colo.com">Colorlib</a></p>
             </div>
 
-        </footer>
+        </footer> 
         <script src="https://kit.fontawesome.com/238c47354a.js" crossorigin="anonymous"></script>
 </body>
 
