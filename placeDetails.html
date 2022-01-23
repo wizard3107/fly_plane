@@ -507,13 +507,15 @@
 
     <script>
         function myFunction(){
-                    var x = document.getElementById("topnav")
+            var x = document.getElementById("topnav")
+                if(x.style.visibility === "hidden"){
                     x.style.visibility = "visible"
-            }
-            function myFun(){
-                var x = document.getElementById("topnav")
-                x.style.visibility = "hidden"
-            }
+                }
+                else{
+                    x.style.visibility = "hidden"
+                }
+        }
+            
     </script>
     
 </body>

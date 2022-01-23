@@ -54,7 +54,7 @@
 
 
                 <div class="burger" id="myTopNav" >
-                   <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()" ondblclick="myFun()">
+                   <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
@@ -331,13 +331,17 @@
 
         <script>
               function myFunction(){
-            var x = document.getElementById("topnav")
-            x.style.visibility = "visible"
-        }
-        function myFun(){
-            var x = document.getElementById("topnav")
-            x.style.visibility = "hidden"
-        }
+                var x = document.getElementById("topnav")
+               
+
+                if(x.style.visibility === "hidden"){
+                    x.style.visibility = "visible"
+                }
+                else{
+                    x.style.visibility = "hidden"
+                }
+              }
+       
         </script>
 
 </body>

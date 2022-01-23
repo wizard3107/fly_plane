@@ -286,11 +286,15 @@
     <script>
          function myFunction(){
             var x = document.getElementById("topnav")
-            x.style.visibility = "visible"
-        }
-        function myFun(){
+            function myFunction(){
             var x = document.getElementById("topnav")
-            x.style.visibility = "hidden"
+                if(x.style.visibility === "hidden"){
+                    x.style.visibility = "visible"
+                }
+                else{
+                    x.style.visibility = "hidden"
+                }
+        }
         }
     </script>
 
