@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/113cf89868.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background-image{
+            /* background-image: url('./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif'); */
+            background-image: url('./breadcrumb-bg.jpg');
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            /* color: white; */
+        }
+        .about-headings{
+            display: flex;
+            justify-content: center;
+        }
+        .head{
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        .fa-chevron-right{
+            color: white;
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        .second-part-heading{
+            text-align: center;
+            margin: 7% 20% 4% 20%;
+            font-size: 40px;
+        }
+        .second-part-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            margin: 2% 2% 2% 2%;
+            color: rgb(88, 83, 83);
+        }
+        .card h1{
+            margin-bottom: 2%;
+        }
+
+        .benefit-card{
+          width: 20%;
+          height: fit-content;
+        }
+        hr{
+          width: 6%;
+          margin-top: 2%;
+          margin-left: 47%;
+          margin-bottom: 5%;
+          height: 10px;
+          background-color: #4657f0;
+        }
+
+        .benef-heading{
+          margin: 2%;
+          text-align: center;
+        }
+
+        .benefit-heading{
+          font-size:xx-large;
+          margin-top: 10%;
+        }
+
+        .benef-cards{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .benefit-card{
+          width: 300px;
+          height: fit-content;
+          text-align: center;
+          margin-bottom: 10%;
+        }
+
+        .benefit-card img{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 8%;
+        }
+
+        .benefit-card h2{
+          font-weight: normal;
+        }
+
+        .benefit-card p{
+          font-size:medium;
+          margin-top: 6%;
+          color: rgb(75, 73, 73);
+        }
+
+        .second-part-cards{
+          margin: 5%;
+        }
+
+        .team-card-one{
+          background-image: url('./team-1.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-card-two{
+          background-image: url('./team-2.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-card-three{
+          background-image: url('./team-3.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-card-four{
+          background-image: url('./team-4.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-cards{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .team-heading{
+          text-align: center;
+        }
+
+        .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+
+         @media screen and (max-width:2000px){
+           .tc{
+            margin: 1%;
+           }
+         }
+
+        @media screen and (max-width:1200px){
+          .benefit-card{
+            width: 400px;
+          }
+          .tc{
+            width: 25%;
+            height: 300px;
+            margin: 5%;
+
+          }
+          .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+        }
+
+        @media screen and (max-width:768px){
+            .card{
+                width: 300px;
+                margin: 2% 2% 2% 2%;
+            }
+            .benefit-card img{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 8%;
+            }
+            .second-part-cards{
+              margin: 5%;
+            }
+            .benefit-card{
+              margin: 15% 2% 2% 2%;
+            }
+
+            .tc{
+            width: 40%;
+            height: 300px;
+            margin: 10%;
+
+          }
+          .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+
+        }
+        @media screen and (max-width:170px){
+            .card{
+                height: 400px;
+            }
+        }
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="about-headings">
+        <p class="head" style="margin-right: 1%;">Home</p>
+        <i  style="margin-right: 1%;" class="fas fa-chevron-right"></i>
+        <h4 class="head">About Us</h4>
+        </div>
+        <h1 style="color: white; text-align: center; font-size: 50px;">About Us</h1>
+    </div>
+
+    <div class="second-part-about">
+        <h1 class="second-part-heading">Metasurgaces are generally designed by placing scatterers in periodic or pseudo-periodic grids.</h1>
+        <div class="second-part-cards">
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+        </div>
+
+
+        <!-- slide show -->
+
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="prev" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlides(1)"></span> 
+              <span class="dot" onclick="currentSlides(2)"></span> 
+              <span class="dot" onclick="currentSlides(3)"></span> 
+            </div>
+
+
+            <!-- benifits -->
+
+            <div class="benefits">
+              <div class="benef-heading">
+              <h1 class="benefit-heading">Our Benefit</h1>
+              <hr class="horizontal-line">
+              </div>
+              <div class="benef-cards">
+                <div class="benefit-card">
+                  <img src="./xbi-1.png.pagespeed.ic.DjbRsc5jwH.webp">
+                  <h2>Personal Schedule</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="./xbi-2.png.pagespeed.ic.FBCFpMxLd8.webp">
+                  <h2>Luxury Interiors</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="./xbi-3.png.pagespeed.ic.d6NhDqMPDB.webp">
+                  <h2>Safe & Confidential</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="./xbi-4.png.pagespeed.ic.wvEUL1huWb.webp">
+                  <h2>Professional Crew</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+              </div>
+
+            </div>
+      
+
+            <!-- testimonials -->
+
+            <div class="main-testimonial">
+              <h1 class="testimonial-heading">Testimonials</h1>
+              <hr class="testimonial-line">
+              
+            </div>
+
+
+
+            <!-- team -->
+            <div class="team-members">
+              <h1 class="team-heading">Our Amazing Team</h1>
+              <hr class="team-line">
+              <div class="team-cards">
+                <div class="team-card-one tc">
+                  <div class="team-details">
+                    <h4>John Smith</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-two tc">
+                  <div class="team-details">
+                    <h4>Mr.Jack</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-three tc">
+                  <div class="team-details">
+                    <h4>Marry Jane</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-four tc">
+                  <div class="team-details">
+                    <h4>Mike</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlides(n){
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+
+
+</body>
+</html>
+
+<!-- 2000 , 1200,767 -->

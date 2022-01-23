@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <script src="https://kit.fontawesome.com/113cf89868.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: "Nunito Sans", sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .background-image{
+            /* background-image: url('./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif'); */
+            background-image: url('./breadcrumb-bg.jpg');
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            /* color: white; */
+        }
+        .contact-headings{
+            display: flex;
+            justify-content: center;
+        }
+        .head{
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        .fa-chevron-right{
+            color: white;
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        hr{
+          width: 6%;
+          margin-top: 2%;
+          margin-left: 47%;
+          margin-bottom: 3%;
+          height: 10px;
+          background-color: #4657f0;
+        }
+        .getInTouch h1{
+            text-align: center;
+            margin: 7% 0% 3% 0%;
+            font-size: 55px;
+        }
+        .getInTouch p{
+            font-size: 22px;
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-bottom: 5%;
+        }
+        .container form{
+            padding: 30px 0 0 0;
+        }
+        .container form .form-row{
+            display: flex;
+            margin: 32px 0;
+        }  
+        form .form-row .input-data{
+            width: 100%;
+            /* height: 40px; */
+            margin: 0 20px;
+            position: relative;
+        }
+        form .form-row .textarea{
+            height: 70px;
+        }
+        .input-data input , .textarea textarea{
+            display: block;
+            /* height: 100%; */
+            width: 100%;
+            font-size: 17px;
+        }
+        .input-data .submit{
+            margin-left: 25%;
+            width: 50%;
+            background-color: #4657f0;
+            border: none;
+            color: white;
+            height: 50px;
+        }
+        .submit:hover{
+            cursor: pointer;;
+        }
+
+        .map{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+        }
+        .map-content{
+            background: #fff;
+            /* position: absolute; */
+            right: 0;
+            top: 800px;
+            left: 0;
+            text-align: center;
+            height: 100px;
+            width: 100%;
+            padding-bottom: 80px;
+            border-radius: 2px;
+            margin: 0 auto;
+        }
+        .map-content h4{
+            color: #1d2a3b;
+            font-weight: 700;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        li{
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+
+        @media screen and (max-width:1200px){
+            /* widget */
+  /* widget */
+  .widget {
+    display: flex;
+   justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #widget_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: left;
+  }
+  #top_socialhandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  #top_socialhandle > a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: #fff;
+  }
+  /* navbar */
+  .navbar {
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .navbar > img {
+    padding: 20px;
+    margin-right: auto;
+  }
+  #topnav{
+    display: none;
+    visibility: hidden;
+    background-color: #f4f8fb;
+    padding-top: 5px;
+    position: absolute;
+    margin-top: -2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 16px;
+    width: fit-content;
+    transition: 2s ease-out;
+  }
+  ul>a{
+    color: #1d2a3b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 2%;
+  }
+  ul>a:hover{
+    border-bottom:3px solid #4651f0;
+  }
+  #navlinks {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    width: 60%;
+    text-transform: uppercase;
+  }
+  #navlinks > a {
+    padding-top: 35px;
+    color: #1d2a3b;
+    text-decoration: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 16px;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display: none;
+    /* padding-top: 5px; */
+    /* margin-bottom: 25px; */
+  }
+  .line{
+    width: 22px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    margin: 4px;
+    margin-bottom: 0;
+  }
+  #navlinks>a:hover{
+    background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
+  }
+        }
+
+
+
+        #home{
+    border-bottom: 4px solid #4651f0;
+  }
+
+
+
+        @media screen and (max-width:768px){
+            .container form .form-row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .form-row .input-data{
+                padding-bottom: 10px;
+            }
+            /* widget */
+  .widget {
+    display:none;
+  }
+  .navbar {
+    margin-top: 0em;
+    width: 100%;
+  }
+  .navbar > img {
+    padding: 20px;
+  }
+  #topnav{
+    visibility: visible;
+  }
+
+
+  #navlinks {
+    display: none;
+    width: 80%;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display:block;
+    margin-left: auto;
+  }
+
+
+        }
+
+
+
+        .widget {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #widget_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: left;
+    color: white;
+  }
+  #top_socialhandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+  }
+  #top_socialhandle > a {
+    margin-left: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  /* navbar */
+  .navbar {
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .navbar > img {
+    padding: 20px;
+    margin-right: auto;
+  }
+#topnav{
+  display: none;
+}
+  #navlinks {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    width: 43%;
+    text-transform: uppercase;
+  }
+  #navlinks > a {
+    padding-top: 35px;
+    color: #1d2a3b;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 16px;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display: none;
+    /* padding-top: 5px; */
+    /* margin-bottom: 25px; */
+  }
+  .line{
+    width: 22px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    margin: 4px;
+    margin-bottom: 0;
+  }
+  #home{
+    border-bottom: 4px solid #4651f0;
+  }
+  #navlinks>a:hover{
+    background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
+  }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+
+
+
+
+
+    <div class="background-image">
+
+
+        <div class="back">
+            <section class="widget">
+                <div id="widget_text">
+                    <span><i class="fas fa-map-marker-alt"></i> 84 Forest Ave, Lake Grove, New York</span>
+                    <span><i class="fas fa-phone-alt"></i> (+12) 345-678-91012</span>
+                    <span><i class="fas fa-envelope"></i> contact.colorlib@gmail.com</span>
+                </div>
+                <div id="top_socialhandle">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+            </section>
+            <header>
+                <div class="navbar">
+                <img src="data:image/webp;base64,UklGRnAEAABXRUJQVlA4TGMEAAAvrwAKEAfjIJIkRcpjSeff0s0cPLYNB5EkKVIeG3n/3n6fsRy0keRIvsQf22G5mYv/244j2VaVOX/tii0JjMQIhHBeAvz73SVAyoUGNS40qOFQo4bDhQYONer7cf/+v/H+N3KhLkUKPZoU6tIo1KVIoS9NCnVpUuhRBHoUKdSlSaEvTQp9KY5R1Lk4xkGNAnVEMNGAMSmTXToi9NiGiWAxCUKlKGjE0uShitTjNG2m9BElRjQyafKZ/pnt+Yz+axvW7fe5Ltf3Psa2n3Zv24/nOCf8LwkGCVkiEiFU4oEYSSQbyJgKk9vQ9oJs23bTSJKHuZqZGdTMzAxFXZWkUvT/nzGWZKgsP0f0H6IkSXWbWWNhjNCG58WfAMHX/enu7hqu7e6e3kIA9XC0hpLWDh4gbHrdRbN2g5Y5RTsd5SFQyu+irbZeIUh63kB7rT0HKU+S/StE2S1001Z4bjhDVx0YfZpc3QC8ICK+2P1JUUtSGrepGW0i6uhT0V0PHcWgSjawb311dlgt0f0/O7QqWeDBNrc8rpTqYybuLNi/4XrxQBJp1bSFZjEDHFumaaU1x1wcWnAuG3GmTD1UyCUDrPFptyLlVgdJGhKM5DMBNEj/MDr+eaFfqf7xefrVcj9JPSsCd354QkR8pFZu9FwtmEgtKFaSut6xqkVio0xcFuNGq9WIisDUTrSPhLm/oB0x1aOIBicXV0melTEde3rbR8RLamWH7ACub8W42WJqlgSqzEy9aNgqeNcesp5YGVJcvbSlCZS051DlSYAOJr4BABninYJzcVFIrVZDoGXql1gyUtU+9oS+mOlRssbQAVnnIgWkowlwjojvHm5L/t/FHX0INOMokbuOmEuoaRYDWBQqNYUGeQLeEXEfAN7IAHvY99tscegbYt4pDe2FvLQB3Yc17S1irjcR0aawZwE7wxur/E4WkK9zlblLhWI6Z9n8FeZxW08Q8kHWqG0eN701dE7aK+wQHz7illKcNpgrgTIIDswrKYWciXFDJbnYG4+kbV37BATKokcD5CGe+fxbDAqXBoXvhzoGafjmBBGf3GGm4nK5nLhSLTOV4Jvqnl2hR+n8MGvDjitfsKeS5n2QsuUNqQPEY1Wy/JN0zfDwMK/fM4N9eus38uoN0gZ5njcS3WTLhZpwiEGlAvBXmdS3jDinDZjSNniMW26I0Z2CB9g3SRQ3HWAGmkkUxQ1yEHw2pIFVRMQ+Cy588kaMvoMXhEXccEA+V4mRH3LqWaYxjFJqSU7refAZF76zYMDLbRGLUCIHDFtxowTwT2YG6ZLvIchXn7BgyxNQrjV1BOgItONUlyQfxMV3sRIisouBTfAgixg8w8p9EphD5JcBuczzLzXn5IzKtH4JrApdM7csct2Bf/KfIMMSi+SxNFTyKiEyhEwXfaWMGFIH8lKrN5D9lzkWNNwRIuW+WnP8CoESOa66jsOZA4A/n9UXyF8fr/O2D6/zEDblfn76R38I0cpDCJXLQfgEAA=="
+                    alt="">
+                <div id="navlinks">
+                    <a href="index.html" id="home">home</a>
+                    <a href="#">place</a>
+                <a href="placeDetails.html">place details</a>
+                    <a href="blog.html">blog</a>
+                    <a href="about.html">about us</a>
+                    <a href="contact.html">contacts</a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+                <div class="topNavBar" id="topnav">
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="place.html"><li>Places</li></a>
+                        <a href="placeDetails.html"><li>Place Details</li></a>
+                        <a href="blog.html"><li>BLOG</li></a>
+                        <a href="about.html"><li>ABOUT US</li></a>
+                        <a href="contactUs.html"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </header>
+    
+
+        <div class="contact-headings">
+        <p class="head" style="margin-right: 1%;">Home</p>
+        <i  style="margin-right: 1%;" class="fas fa-chevron-right"></i>
+        <h4 class="head">Contact Us</h4>
+        </div>
+        <h1 style="color: white; text-align: center; font-size: 50px;">Contact Us</h1>
+    </div>
+
+    <div class="getInTouch">
+        <h1>Get In Touch</h1>
+        <hr>
+        <p>Home is where your WiFi connects automatically. Here’s where ours does. Give us a call into our headquarters to say hi in person</p>
+    </div>
+
+
+    <div class="container">
+        <form action="contact.html">
+            <div class="form-row">
+                <div class="input-data">
+                    <label for="name" >Name</label>
+                    <input type="text" class="name">
+                </div>
+                <div class="input-data">
+                    <label for="name" class="email">Email</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="form-row textarea">
+                <div class="input-data">
+                    <label for="name">Comment</label>
+                    <textarea cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-row submit-btn">
+                <div class="input-data">
+                    <input type="submit" value="Post Comment" class="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57514.61150906985!2d-74.30991906664106!3d40.74575912600234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!3m2!1d40.7127753!2d-74.0059728!5e0!3m2!1sen!2sbd!4v1611138660709!5m2!1sen!2sbd" height="454px" style="border: 0;;">
+            
+        </iframe>
+        <div class="map-content">
+            <h4>New York</h4>
+            <ul>
+                <li>Phone: (+12) 345-678-91012</li>
+                <li>Add: New York, NY 256364, United States</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
