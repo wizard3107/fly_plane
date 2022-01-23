@@ -1,1 +1,854 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/113cf89868.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Nunito Sans", sans-serif;
+            text-align: center;
+        }
+        #ssimg{
+            background-repeat: no-repeat;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .main-testimonial{
+            background-image: url("https://preview.colorlib.com/theme/flyplane/img/testimonial/testimonial-bg.jpg");
+            height: 60vh;
+            padding: 5%;
+            margin: 2%;
+        }
+        .background-image{
+            /* background-image: url('./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif'); */
+            background-image: url('https://preview.colorlib.com/theme/flyplane/img/breadcrumb-bg.jpg');
+            width: 100%;
+            height: 65vh;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            
+            /* color: white; */
+        }
+        .about-headings{
+            display: flex;
+            justify-content: center;
+           margin-top: 1%;
+        }
+        .head{
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        .testimonial-heading{
+            color: #fff;
+            margin-top: 10%;
+        }
+        .fa-chevron-right{
+            color: white;
+            margin-top: 15%;
+            color: white;
+            margin-bottom: 1%;
+        }
+        .second-part-heading{
+            text-align: center;
+            margin: 7% 20% 4% 20%;
+            font-size: 40px;
+        }
+
+        .second-part-cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card{
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            margin: 2% 2% 2% 2%;
+            color: rgb(88, 83, 83);
+        }
+        .card h1{
+            margin-bottom: 2%;
+        }
+
+        .benefit-card{
+          width: 20%;
+          height: fit-content;
+        }
+        hr{
+          width: 6%;
+          margin-top: 2%;
+          margin-left: 47%;
+          margin-bottom: 5%;
+          height: 10px;
+          background-color: #4657f0;
+        }
+
+        .benef-heading{
+          margin: 2%;
+          text-align: center;
+        }
+
+        .benefit-heading{
+          font-size:xx-large;
+          margin-top: 10%;
+        }
+
+        .benef-cards{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+        }
+
+        .benefit-card{
+          width: 300px;
+          height: fit-content;
+          text-align: center;
+          margin-bottom: 10%;
+        }
+
+        .benefit-card img{
+            width: 60px;
+            height: 60px;
+            margin-bottom: 8%;
+        }
+
+        .benefit-card h2{
+          font-weight: normal;
+        }
+
+        .benefit-card p{
+          font-size:medium;
+          margin-top: 6%;
+          color: rgb(75, 73, 73);
+        }
+
+        .second-part-cards{
+          margin: 5%;
+        }
+
+        .team-card-one{
+          background-image: url('https://preview.colorlib.com/theme/flyplane/img/team/team-1.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+          
+        }
+
+        .team-card-two{
+          background-image: url('https://preview.colorlib.com/theme/flyplane/img/team/team-2.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-card-three{
+          background-image: url('https://preview.colorlib.com/theme/flyplane/img/team/team-3.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-card-four{
+          background-image: url('https://preview.colorlib.com/theme/flyplane/img/team/team-4.jpg');
+          width: 20%;
+          height: 300px;
+          background-repeat: no-repeat;
+        }
+
+        .team-cards{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .team-heading{
+          text-align: center;
+        }
+
+        .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+
+         @media screen and (max-width:2000px){
+          /* widget */
+  .widget {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #fff;
+  }
+  #widget_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: left;
+  }
+  #top_socialhandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #top_socialhandle > a {
+    margin-left: 2em;
+    text-decoration: none;
+    color: #fff;
+  }
+  /* navbar */
+  .navbar {
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0em;
+    margin-top: 2em;
+  }
+  .navbar > img {
+    padding: 20px;
+    margin-right: auto;
+  }
+#topnav{
+  display: none;
+}
+  #navlinks {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    width: 50%;
+    text-transform: uppercase;
+  }
+  #navlinks > a {
+    padding-top: 35px;
+    color: #1d2a3b;
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 16px;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display: none;
+    /* padding-top: 5px; */
+    /* margin-bottom: 25px; */
+  }
+  .line{
+    width: 22px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    margin: 4px;
+    margin-bottom: 0;
+  }
+  #home{
+    border-bottom: 4px solid #4651f0;
+  }
+  #navlinks>a:hover{
+    background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
+  }
+            .tc{
+            margin: 1%;
+           }
+            /* footer */
+  footer{
+    background-color:rgb(40, 42, 53);
+    margin-top: 5%;
+  }
+  .footer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    padding: 4em;
+    font-size: 20px;
+     
+  }
+  #socialhandles {
+    margin-top: 2em;
+  }
+  #socialhandles > a {
+    margin-left: 0.5em;
+    color: whitesmoke;
+    border-radius: 2em;
+  }
+  #socialhandles > a:hover {
+    margin-left: 0.5em;
+    color: blueviolet;
+    border-radius: 1em;
+  }
+  #linksfooter {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #linksfooter ~ p {
+    font-size: 13px;
+  }
+  p > a {
+    text-decoration: none;
+    color: Dodgerblue;
+  }
+  #linksfooter > a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+         }
+
+        @media screen and (max-width:1200px){
+            /* widget */
+  .widget {
+    display: flex;
+   justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  #widget_text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    justify-content: left;
+  }
+  #top_socialhandle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  #top_socialhandle > a {
+    margin-left: 1em;
+    text-decoration: none;
+    color: #fff;
+  }
+  /* navbar */
+  .navbar {
+    background-color: aliceblue;
+    display:flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  #home{
+    border-bottom: 4px solid #4651f0;
+  }
+  .navbar > img {
+    padding: 20px;
+    margin-right: auto;
+  }
+  #topnav{
+    display: none;
+    visibility: hidden;
+    background-color: #f4f8fb;
+    padding-top: 5px;
+    position: absolute;
+    margin-top: -2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 16px;
+    width: fit-content;
+    transition: 2s ease-out;
+  }
+  ul>a{
+    color: #1d2a3b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 2%;
+  }
+  ul>a:hover{
+    border-bottom:3px solid #4651f0;
+  }
+  #navlinks {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    width: 65%;
+    text-transform: uppercase;
+  }
+  #navlinks > a {
+    padding-top: 35px;
+    color: #1d2a3b;
+    text-decoration: none;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 16px;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display: none;
+    /* padding-top: 5px; */
+    /* margin-bottom: 25px; */
+  }
+  .line{
+    width: 22px;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 2px;
+    margin: 4px;
+    margin-bottom: 0;
+  }
+  #navlinks>a:hover{
+    background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
+  }
+          .benefit-card{
+            width: 400px;
+          }
+          .tc{
+            width: 25%;
+            height: 300px;
+            margin: 5%;
+
+          }
+          .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+          /* footer */
+  footer{
+    background-color:rgb(40, 42, 53);
+  }
+  .footer {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-align: center;
+    padding: 4em;
+    font-size: 20px;
+     
+  }
+  #socialhandles {
+    margin-top: 2em;
+  }
+  #socialhandles > a {
+    margin-left: 0.5em;
+    color: whitesmoke;
+    border-radius: 2em;
+  }
+  #socialhandles > a:hover {
+    margin-left: 0.5em;
+    color: blueviolet;
+    border-radius: 1em;
+  }
+  #linksfooter {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #linksfooter ~ p {
+    font-size: 13px;
+  }
+  p > a {
+    text-decoration: none;
+    color: Dodgerblue;
+  }
+  #linksfooter > a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+        }
+        @media screen and (max-width:1040px){
+            .widget {
+    display:none;
+  }
+  .navbar {
+    margin-top: 0em;
+  }
+  .navbar > img {
+    padding: 20px;
+  }
+  #topnav{
+    visibility: visible;
+  }
+
+  #navlinks {
+    display: none;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display:block;
+    margin-left: auto;
+  }
+  .background-image{
+            /* background-image: url('./xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.jfif'); */
+            background-image: url('https://preview.colorlib.com/theme/flyplane/img/breadcrumb-bg.jpg');
+            width: 100%;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            /* color: white; */
+        }
+        }
+
+        @media screen and (max-width:768px){
+            /* widget */
+  .widget {
+    display:none;
+  }
+  .navbar {
+    margin-top: 0em;
+  }
+  .navbar > img {
+    padding: 20px;
+  }
+  #topnav{
+    visibility: visible;
+  }
+
+  #navlinks {
+    display: none;
+  }
+  .burger{
+    border: 1px solid black;
+    margin: 25px;
+    height: 30px;
+    display:block;
+    margin-left: auto;
+  }
+            .card{
+                width: 300px;
+                margin: 2% 2% 2% 2%;
+            }
+            .benefit-card img{
+                width: 40px;
+                height: 40px;
+                margin-bottom: 8%;
+            }
+            .second-part-cards{
+              margin: 5%;
+            }
+            .benefit-card{
+              margin: 15% 2% 2% 2%;
+            }
+
+            .tc{
+            width: 40%;
+            height: 300px;
+            margin: 10%;
+
+          }
+          .team-details{
+          display: flex;
+          justify-content: space-between;
+          background-color: #4657f0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin-top: 300px;
+         }
+
+         .team-details h4{
+           margin-left: 5%;
+           color: white;
+         }
+
+         .team-details p{
+           margin-right: 5%;
+           color: white;
+         }
+         footer {
+    width: 100%;
+  }
+
+        }
+        @media screen and (max-width:170px){
+            .card{
+                height: 400px;
+            }
+            .navbar {
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em; }
+  .navbar > img {
+    padding: 0px;
+    width:40%;
+  }
+  .burger{
+    margin: 0;
+    margin-left: auto;
+  }
+        }
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="back">
+            <section class="widget">
+                <div id="widget_text">
+                    <span><i class="fas fa-map-marker-alt"></i> 84 Forest Ave, Lake Grove, New York</span>
+                    <span><i class="fas fa-phone-alt"></i> (+12) 345-678-91012</span>
+                    <span><i class="fas fa-envelope"></i> contact.colorlib@gmail.com</span>
+                </div>
+                <div id="top_socialhandle">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+    
+            </section>
+            <header>
+                <div class="navbar">
+                <img src="data:image/webp;base64,UklGRnAEAABXRUJQVlA4TGMEAAAvrwAKEAfjIJIkRcpjSeff0s0cPLYNB5EkKVIeG3n/3n6fsRy0keRIvsQf22G5mYv/244j2VaVOX/tii0JjMQIhHBeAvz73SVAyoUGNS40qOFQo4bDhQYONer7cf/+v/H+N3KhLkUKPZoU6tIo1KVIoS9NCnVpUuhRBHoUKdSlSaEvTQp9KY5R1Lk4xkGNAnVEMNGAMSmTXToi9NiGiWAxCUKlKGjE0uShitTjNG2m9BElRjQyafKZ/pnt+Yz+axvW7fe5Ltf3Psa2n3Zv24/nOCf8LwkGCVkiEiFU4oEYSSQbyJgKk9vQ9oJs23bTSJKHuZqZGdTMzAxFXZWkUvT/nzGWZKgsP0f0H6IkSXWbWWNhjNCG58WfAMHX/enu7hqu7e6e3kIA9XC0hpLWDh4gbHrdRbN2g5Y5RTsd5SFQyu+irbZeIUh63kB7rT0HKU+S/StE2S1001Z4bjhDVx0YfZpc3QC8ICK+2P1JUUtSGrepGW0i6uhT0V0PHcWgSjawb311dlgt0f0/O7QqWeDBNrc8rpTqYybuLNi/4XrxQBJp1bSFZjEDHFumaaU1x1wcWnAuG3GmTD1UyCUDrPFptyLlVgdJGhKM5DMBNEj/MDr+eaFfqf7xefrVcj9JPSsCd354QkR8pFZu9FwtmEgtKFaSut6xqkVio0xcFuNGq9WIisDUTrSPhLm/oB0x1aOIBicXV0melTEde3rbR8RLamWH7ACub8W42WJqlgSqzEy9aNgqeNcesp5YGVJcvbSlCZS051DlSYAOJr4BABninYJzcVFIrVZDoGXql1gyUtU+9oS+mOlRssbQAVnnIgWkowlwjojvHm5L/t/FHX0INOMokbuOmEuoaRYDWBQqNYUGeQLeEXEfAN7IAHvY99tscegbYt4pDe2FvLQB3Yc17S1irjcR0aawZwE7wxur/E4WkK9zlblLhWI6Z9n8FeZxW08Q8kHWqG0eN701dE7aK+wQHz7illKcNpgrgTIIDswrKYWciXFDJbnYG4+kbV37BATKokcD5CGe+fxbDAqXBoXvhzoGafjmBBGf3GGm4nK5nLhSLTOV4Jvqnl2hR+n8MGvDjitfsKeS5n2QsuUNqQPEY1Wy/JN0zfDwMK/fM4N9eus38uoN0gZ5njcS3WTLhZpwiEGlAvBXmdS3jDinDZjSNniMW26I0Z2CB9g3SRQ3HWAGmkkUxQ1yEHw2pIFVRMQ+Cy588kaMvoMXhEXccEA+V4mRH3LqWaYxjFJqSU7refAZF76zYMDLbRGLUCIHDFtxowTwT2YG6ZLvIchXn7BgyxNQrjV1BOgItONUlyQfxMV3sRIisouBTfAgixg8w8p9EphD5JcBuczzLzXn5IzKtH4JrApdM7csct2Bf/KfIMMSi+SxNFTyKiEyhEwXfaWMGFIH8lKrN5D9lzkWNNwRIuW+WnP8CoESOa66jsOZA4A/n9UXyF8fr/O2D6/zEDblfn76R38I0cpDCJXLQfgEAA=="
+                    alt="">
+                <div id="navlinks">
+                    <a href="index.html" >home</a>
+                    <a href="place.html">place</a>
+                <a href="placeDetails.html">place details</a>
+                    <a href="blog.html">blog</a>
+                    <a href="about.html" id="home">about us</a>
+                    <a href="contactUs.html">contacts</a>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+                <div class="topNavBar" id="topnav">
+                
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="place.html"><li>Places</li></a>
+                        <a href="placeDetails.html"><li>Place Details</li></a>
+                        <a href="blog.html"><li>BLOG</li></a>
+                        <a href="about.html"><li>ABOUT US</li></a>
+                        <a href="contactUs.html"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </header>
+        <div class="about-headings">
+        <p class="head" style="margin-right: 1%;">Home</p>
+        <i  style="margin-right: 1%;" class="fas fa-chevron-right"></i>
+        <h4 class="head">About Us</h4>
+        </div>
+        <h1 style="color: white; text-align: center; font-size: 50px; margin-bottom: -5%;">About Us</h1>
+    </div>
+
+    <div class="second-part-about">
+        <h1 class="second-part-heading">Metasurgaces are generally designed by placing scatterers in periodic or pseudo-periodic grids.</h1>
+        <div class="second-part-cards">
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+            <div class="card">
+                <h1 style="color: black;">Our Mission</h1>
+                <p>You have finished building your own website. You have introduced your company and presented your products and services. You have added propositions and promos to catch your target audience's attension.</p>
+            </div>
+        </div>
+
+
+        <!-- slide show -->
+
+
+        <div class="slideshow-container" id="ssimg">
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlides(1)"></span> 
+              <span class="dot" onclick="currentSlides(2)"></span> 
+              <span class="dot" onclick="currentSlides(3)"></span> 
+            </div>
+
+
+            <!-- benifits -->
+
+            <div class="benefits">
+              <div class="benef-heading">
+              <h1 class="benefit-heading">Our Benefit</h1>
+              <hr class="horizontal-line">
+              </div>
+              <div class="benef-cards">
+                <div class="benefit-card">
+                  <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbl-1.png.pagespeed.ic.5yp4Lt41TL.webp">
+                  <h2>Personal Schedule</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbl-2.png.pagespeed.ic.uqjVIUspHE.webp">
+                  <h2>Luxury Interiors</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbl-3.png.pagespeed.ic.6jzz6-oJ1f.webp">
+                  <h2>Safe & Confidential</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+                <div class="benefit-card">
+                  <img src="https://preview.colorlib.com/theme/flyplane/img/benefit/xbl-4.png.pagespeed.ic.Ru_RkFvHgD.webp">
+                  <h2>Professional Crew</h2>
+                  <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.</p>
+                </div>
+              </div>
+
+            </div>
+      
+
+            <!-- testimonials -->
+
+            <div class="main-testimonial">
+              <h1 class="testimonial-heading">Testimonials</h1>
+              <hr class="testimonial-line">
+              
+            </div>
+
+
+
+            <!-- team -->
+            <div class="team-members">
+              <h1 class="team-heading">Our Amazing Team</h1>
+              <hr class="team-line">
+              <div class="team-cards">
+                <div class="team-card-one tc">
+                  <div class="team-details">
+                    <h4>John Smith</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-two tc">
+                  <div class="team-details">
+                    <h4>Mr.Jack</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-three tc">
+                  <div class="team-details">
+                    <h4>Marry Jane</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+                <div class="team-card-four tc">
+                  <div class="team-details">
+                    <h4>Mike</h4>
+                    <p>Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <img src="https://preview.colorlib.com/theme/flyplane/img/xfooter-logo.png.pagespeed.ic.NCNGXFtHK8.webp"
+                        alt="">
+                    <p>Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut,
+                        scelerisque
+                        volutpat diam. </p>
+    
+                    <div id="socialhandles">
+                        <a href="index.html"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="index.html"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="index.html"><i class="fab fa-instagram fa-2x"></i></a>
+    
+                        <a href="index.html"><i class="fab fa-youtube fa-2x"></i></a>
+    
+                    </div>
+                    <div id="linksfooter">
+                        <a href="index.html">HOME</a>
+                        <a href="pages.html">PAGES</a>
+                        <a href="blog.html">BLOG</a>
+                        <a href="about.html">ABOUTUS</a>
+                        <a href="contact.html">CONTACTS</a>
+                    </div>
+                    <p>Copyright ©2022 All rights reserved | This template is made with<span style="color: Dodgerblue;">
+                            <i class="fas fa-heart"></i>
+                        </span> by <a href="colo.com">Colorlib</a></p>
+                </div>
+    
+            </footer>
+    <script>
+        var data=['https://preview.colorlib.com/theme/flyplane/img/about/xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.webp','https://preview.colorlib.com/theme/flyplane/img/testimonial/testimonial-bg.jpg','https://preview.colorlib.com/theme/flyplane/img/about/xabout-pic-1.jpg.pagespeed.ic.zQGlvPLIXw.webp'];
+        var n=0;
+        var di=document.getElementById("ssimg");
+        di.style.width="90%";
+        di.style.height="60vh";
+        setInterval(()=>{    
+        di.style.backgroundImage=`url(${data[n]})`;
+        di.style.transition="opacity 3s ease-in";
+       
+        di.innerText=`view${n+1}`
+        var dat=data[n];
+        n++;
+        if(n===3)
+        n=0;
+        },3000)
+        </script>
+
+
+</body>
+</html>
