@@ -4,6 +4,9 @@ html,body {
   overflow-x: hidden;
   font-family: "Nunito Sans", sans-serif;
 }
+ul{
+  list-style: none;
+}
 /*large screen*/
 @media screen and (min-width: 1250px){
   .back {
@@ -59,14 +62,16 @@ html,body {
     padding: 20px;
     margin-right: auto;
   }
-
+#topnav{
+  display: none;
+}
   #navlinks {
     display: flex;
     justify-content: space-around;
     font-size: 15px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
-    width: 43%;
+    width: 50%;
     text-transform: uppercase;
   }
   #navlinks > a {
@@ -93,8 +98,12 @@ html,body {
     margin: 4px;
     margin-bottom: 0;
   }
+  #home{
+    border-bottom: 4px solid #4651f0;
+  }
   #navlinks>a:hover{
     background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
   }
   /* header title */
   .header_content {
@@ -571,13 +580,15 @@ html,body {
     margin: auto;
   }
   
-  #countrydispSS>div>h5{
+  #countrydispSS>div>label{
     font-size: 20px;
     font-weight: 700;
     color: #1d2a3b;
     width: fit-content;
-    padding: 20px 30px 20px;
-
+    padding: 20px 30px 20px 20px;
+  }
+  .country-btn{
+    display: none;
   }
   /* News Component */
   .news{
@@ -758,18 +769,43 @@ html,body {
     margin-bottom: 2em;
     margin-top: 2em;
   }
+  #home{
+    border-bottom: 4px solid #4651f0;
+  }
   .navbar > img {
     padding: 20px;
     margin-right: auto;
   }
-
+  #topnav{
+    display: none;
+    visibility: hidden;
+    background-color: #f4f8fb;
+    padding-top: 5px;
+    position: absolute;
+    margin-top: -2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 16px;
+    width: fit-content;
+    transition: 2s ease-out;
+  }
+  ul>a{
+    color: #1d2a3b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 2%;
+  }
+  ul>a:hover{
+    border-bottom:3px solid #4651f0;
+  }
   #navlinks {
     display: flex;
     justify-content: space-around;
     font-size: 15px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
-    width: 60%;
+    width: 65%;
     text-transform: uppercase;
   }
   #navlinks > a {
@@ -798,6 +834,7 @@ html,body {
   }
   #navlinks>a:hover{
     background: rgba(29, 42, 59, 0.1);
+    border-bottom: 4px solid #4651f0;
   }
   .header_content {
     max-width: 850px;
@@ -1268,6 +1305,7 @@ html,body {
     color: #ffffff;
     padding: 300px 40px 280px;
     font-size: 160px;
+    opacity: .7;
     width: fit-content;
   }
   #countrydispSS {
@@ -1277,13 +1315,16 @@ html,body {
     width: 80%;
     /* justify-content: center; */
   }
-  #countrydispSS>div>h5{
+  #countrydispSS>div>label{
     font-size: 20px;
     font-weight: 700;
     color: #1d2a3b;
     width: fit-content;
-    padding: 20px 30px 20px;
+    padding: 20px 30px 20px 20px;
 
+  }
+  .country-btn{
+    display: none;
   }
    /* News Component */
    .news{
@@ -1427,6 +1468,9 @@ html,body {
   .navbar > img {
     padding: 20px;
   }
+  #topnav{
+    visibility: visible;
+  }
 
   #navlinks {
     display: none;
@@ -1494,6 +1538,10 @@ html,body {
     grid-template-columns: 100%;
     row-gap: 1em;
   }
+  .benefits{
+    padding: 5%;
+
+  }
   #benefitContent {
     width: 90%;
   }
@@ -1557,6 +1605,7 @@ html,body {
 }
 /* small medium screen */
 @media screen and (max-width: 650px) {
+  
   .header_content > p {
     font-size: 16px;
     line-height: 26px;
@@ -1586,6 +1635,7 @@ html,body {
   /* Our Benifits*/
   .benefits {
     margin-top: 7%;
+    
   }
   #collageCol {
     width:100%    
@@ -1942,7 +1992,7 @@ html,body {
     justify-content: center;
     width: 80%;
   }
-  #countrydispSS>div>h5{
+  #countrydispSS>div>label{
     font-size: 20px;
     font-weight: 700;
     color: #1d2a3b;
@@ -1950,6 +2000,7 @@ html,body {
     padding: 20px 30px 20px;
 
   }
+
    /* News Component */
    #newsDate{
     height: auto;
@@ -1968,5 +2019,4 @@ html,body {
   .footer>img{
     width:100%;
   }
- 
 }
