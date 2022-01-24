@@ -24,5 +24,9 @@ The Overview of Our Website is shown by following images:
 
 ![places (2)](https://user-images.githubusercontent.com/72353440/150798664-b2b7a502-05c1-44f9-b57a-e499fc36788f.png)
 
+3.This is Home Page:
+
+![home (2)](https://user-images.githubusercontent.com/72353440/150798967-df44b523-0383-4ffe-b2f8-56b23fc1a997.png)
+
 
 
