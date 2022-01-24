@@ -14,8 +14,15 @@ Technologies used-1.HTML
 
 The Overview of Our Website is shown by following images:
 
+
+1.This is Blog Page:
+
 ![blog (2)](https://user-images.githubusercontent.com/72353440/150797606-7f8d19f9-d858-47ef-b10b-8d516fa9f85d.png)
 
+
+2.This is Places Page:
+
+![places (2)](https://user-images.githubusercontent.com/72353440/150798664-b2b7a502-05c1-44f9-b57a-e499fc36788f.png)
 
 
 
