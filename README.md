@@ -12,5 +12,10 @@ Technologies used-1.HTML
                   2.CSS
                   3.Javascript
 
+The Overview of Our Website is shown by following images:
+
+![blog (2)](https://user-images.githubusercontent.com/72353440/150797606-7f8d19f9-d858-47ef-b10b-8d516fa9f85d.png)
+
+
 
 
