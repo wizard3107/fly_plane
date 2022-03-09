@@ -2,7 +2,6 @@ var number = 1;
 var country=document.getElementById("countryName");
 setInterval(()=>{
     var name = document.getElementById("country"+number);
-    
     country.innerText=name.innerText;
     var line1 = document.getElementById("country"+number);
     line1.style.borderBottom= "thick solid #0000FF";
@@ -18,6 +17,8 @@ setInterval(()=>{
         number=1;
     }
 },3000);
+
+
 document.querySelector(".burger").addEventListener("click",()=>{
     var x = document.getElementById("topnav")
 

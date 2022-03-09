@@ -70,15 +70,16 @@ body{
         text-decoration: none;
         color: #fff;
       }
+      /* Navbar Start */
       .navbar {
-        background-color: aliceblue;
-        display:flex;
-        justify-content: space-around;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 6em;
-        margin-top: 3em;
+        background-color: white;
+    display:flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-top: 2em;
       }
       .navbar > img {
         padding: 20px;
@@ -87,37 +88,45 @@ body{
     
       #navlinks {
         display: flex;
-        justify-content: space-around;
-        font-size: 15px;
-        font-weight: 600;
-        font-family: "Open Sans", sans-serif;
-        width: 43%;
-        text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    width: 55%;
+    text-transform: uppercase;
       }
-      #navlinks > a {
+      #navlinks > a ,.pages{
         padding-top: 35px;
         color: #1d2a3b;
         text-decoration: none;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
         font-size: 16px;
       }
       .burger{
         border: 1px solid black;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        margin: 25px;
         height: 30px;
-        width: 30px;
         display: none;
       }
-      .burger-icon{
-          font-size: 25px;
-          color: #000000;
+      .line{
+        width: 22px;
+        height: 4px;
+        background-color: #000000;
+        border-radius: 2px;
+        margin: 4px;
+        margin-bottom: 0;
       }
-      
-      #navlinks>a:hover{
+
+      #navlinks > a:hover{
         background: rgba(29, 42, 59, 0.1);
-        border-bottom: 5px solid #4657F0;
+        border-bottom: 4px solid #4651f0;
+      }
+      #navlinks > a:nth-child(1){
+        background-color: rgba(29, 42, 59, 0.1);
+        border-bottom: 4px solid #4651f0;
+      }
+      .header-text{
+          margin-top: -15px;
       }
      .header-text-wrapper{
         margin-top: 40px;
@@ -135,7 +144,42 @@ body{
         color: white;
         font-weight:600;
         font-size: 18px;
-    }  
+    } 
+    .pages{
+        cursor: pointer;
+        color: #000000;
+      }
+      /* Dropdown for pages */
+      .dropdown{
+        visibility: hidden;
+      }
+      .dropdown-pages{
+        height: 120px;
+        display: flex;
+        width: 150px;
+        position: absolute;
+        margin-top: 27px;
+        margin-left: -10px;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 15px;
+        padding: 10px;
+        font-size: 2px;
+        font-weight: 100;
+      }
+      .dropdown-pages>a{
+        text-decoration: none;
+        color: #000000;
+      }
+      .pages:hover{
+        background: rgba(29, 42, 59, 0.1);
+        border-bottom: 4px solid #4651f0; 
+      }
+      .pages:hover .dropdown{
+        visibility: visible;
+      }
     #section1{
         width: 100%;
     }
